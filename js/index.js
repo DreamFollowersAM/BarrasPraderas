@@ -3,7 +3,7 @@ new Vue({
   data : {
         nnm : '',
         ncn : 0,
-        npr : 0,
+        npr : 1,
       itms : []
   },
   methods : {
@@ -11,7 +11,7 @@ new Vue({
           this.itms.push({nm: this.nnm, cn: this.ncn, pr: this.npr});
           this.nnm = '';
           this.ncn = 0;
-          this.npr = 0;
+          this.npr = 1;
       },
       clr (op) {
         return{
