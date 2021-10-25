@@ -12,6 +12,13 @@ new Vue({
           this.nnm = '';
           this.ncn = 0;
           this.npr = 0;
+      },
+      clr (op) {
+        return{
+          "bg-success": op >= 10,
+          "bg-warning": op < 10 && op >= 1,
+          "bg-danger": op < 1
+        }
       }
   },
   computed : {
@@ -28,6 +35,6 @@ new Vue({
     iv (){
         return this.ttl*.16;
     }
-  }
+}
  
 });
