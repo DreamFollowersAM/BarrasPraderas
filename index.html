@@ -147,7 +147,7 @@
           <div class="col-md-3"><p>precio unitario</p></div>
           <div class="col-md-3"><p>precio total</p></div>
         </div>
-        <div class="row mx-0 px-0" v-for="it in itms">
+        <div class="row mx-0 px-0" v-for="it in itms" :class="clr(it.cn)">
           <div class="col-md-3">
             <button class="btn btn-danger" @click="it.cn--">-</button>
             <input type="number" class="w-25" max="999" v-model="it.cn" />
